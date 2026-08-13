@@ -26,7 +26,6 @@ class ExtensionLookup(dict[str, str]):
 def build_extension_lookup(overrides: dict[str, str] | None = None) -> ExtensionLookup:
     return ExtensionLookup(overrides or EXTENSION_TO_FOLDER)
 
-
 def resolve_destination_folder(file_path: Path, lookup: ExtensionLookup) -> str:
     suffix = file_path.suffix
     if not suffix or suffix == ".":
