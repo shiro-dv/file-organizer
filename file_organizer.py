@@ -11,7 +11,6 @@ NO_EXTENSION_FOLDER = "no_extension"
 EXTENSION_TO_FOLDER: dict[str, str] = {}
 SKIP_HIDDEN_FILES = True
 
-
 class ExtensionLookup(dict[str, str]):
     def __init__(self, overrides: dict[str, str] | None = None) -> None:
         super().__init__()
